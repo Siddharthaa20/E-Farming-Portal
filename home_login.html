@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Forming Portal - Choose Your Role</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f4f7;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .role-button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .retailer-btn {
+            background-color: #4CAF50;
+        }
+
+        .customer-btn {
+            background-color: #007BFF;
+        }
+
+        .role-button:hover {
+            opacity: 0.8;
+        }
+
+        .footer {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to the E-Forming Portal</h1>
+        <p>Please choose your role:</p>
+
+        <!-- Buttons for Retailer and Customer Login -->
+        <a href="retailer_login.html"><><button class="role-button retailer-btn" onclick="window.location.href='/e-forming/retailer/login';">
+            Retailer Login
+        </button/a>
+        <a href="customer_login.html"><><button class="role-button customer-btn" onclick="window.location.href='/e-forming/customer/login';">
+            Customer Login
+        </button/a>
+
+        <!-- Optional footer links -->
+        <div class="footer">
+            <p>New to the portal? <a href="#">Sign Up</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

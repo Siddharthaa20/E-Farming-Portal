@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Forming Portal Login</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 360px;
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #444;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            margin: 12px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #6a11cb;
+            outline: none;
+            box-shadow: 0 0 6px rgba(106, 17, 203, 0.3);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(90deg, #2575fc, #6a11cb);
+        }
+
+        .link-container {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .link-container a {
+            color: #2575fc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .link-container a:hover {
+            color: #6a11cb;
+            text-decoration: underline;
+        }
+
+        .forgot-password {
+            display: block;
+            margin-top: 15px;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        
+        <h2>Customer Login</h2>
+        <form action="./minor_project/Mainindex.html" method="get">
+            <input type="text" name="username" placeholder="Enter your username" required><br>
+            <input type="password" name="password" placeholder="Enter your password" required><br>
+            <input type="submit" value="Login">
+        </form>
+        
+        <div class="link-container">
+            <p>Don't have an account? <a href="/e-forming/signup">Sign Up</a></p>
+            <a href="/e-forming/forgot-password" class="forgot-password">Forgot your password?</a>
+        </div>
+    </div>
+
+</body>
+</html>
